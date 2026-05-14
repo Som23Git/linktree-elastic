@@ -84,8 +84,8 @@ const regionCardsHtml = regions.map(r =>
 ).join('\n');
 
 const indexHtml = renderPage(
-  'Elastic Community Links',
-  'Connect with the Elastic community in your region.',
+  'Linkfolio',
+  'Explore cities and discover the best places to visit.',
   regionCardsHtml
 );
 
