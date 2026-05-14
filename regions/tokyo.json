@@ -1,0 +1,34 @@
+{
+  "region": "Tokyo",
+  "profile": {
+    "name": "Tokyo",
+    "description": "A city where ancient temples sit beside neon-lit towers. Here are the best places to explore."
+  },
+  "sections": [
+    {
+      "title": "Iconic Landmarks",
+      "links": [
+        { "title": "Senso-ji Temple", "url": "https://www.senso-ji.jp" },
+        { "title": "Tokyo Skytree", "url": "https://www.tokyo-skytree.jp/en/" },
+        { "title": "Meiji Shrine", "url": "https://www.meijijingu.or.jp/en/" },
+        { "title": "Shibuya Crossing", "url": "https://www.gotokyo.org/en/spot/6/index.html" }
+      ]
+    },
+    {
+      "title": "Museums & Art",
+      "links": [
+        { "title": "Tokyo National Museum", "url": "https://www.tnm.jp/?lang=en" },
+        { "title": "teamLab Borderless", "url": "https://borderless.teamlab.art" },
+        { "title": "Mori Art Museum", "url": "https://www.mori.art.museum/en/" }
+      ]
+    },
+    {
+      "title": "Neighbourhoods",
+      "links": [
+        { "title": "Shinjuku", "url": "https://www.gotokyo.org/en/destinations/western-tokyo/shinjuku/index.html" },
+        { "title": "Akihabara", "url": "https://www.gotokyo.org/en/destinations/eastern-tokyo/akihabara/index.html" },
+        { "title": "Harajuku", "url": "https://www.gotokyo.org/en/destinations/western-tokyo/harajuku-aoyama/index.html" }
+      ]
+    }
+  ]
+}

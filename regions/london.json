@@ -1,0 +1,35 @@
+{
+  "region": "London",
+  "profile": {
+    "name": "London",
+    "description": "History, culture, and world-class museums — much of it free. A city that rewards the curious."
+  },
+  "sections": [
+    {
+      "title": "Iconic Landmarks",
+      "links": [
+        { "title": "Tower of London", "url": "https://www.hrp.org.uk/tower-of-london/" },
+        { "title": "Buckingham Palace", "url": "https://www.rct.uk/visit/the-state-rooms-buckingham-palace" },
+        { "title": "Tower Bridge", "url": "https://www.towerbridge.org.uk" },
+        { "title": "Hyde Park", "url": "https://www.royalparks.org.uk/parks/hyde-park" }
+      ]
+    },
+    {
+      "title": "Museums & Art",
+      "links": [
+        { "title": "The British Museum", "url": "https://www.britishmuseum.org" },
+        { "title": "Tate Modern", "url": "https://www.tate.org.uk/visit/tate-modern" },
+        { "title": "National Gallery", "url": "https://www.nationalgallery.org.uk" },
+        { "title": "Natural History Museum", "url": "https://www.nhm.ac.uk" }
+      ]
+    },
+    {
+      "title": "Neighbourhoods",
+      "links": [
+        { "title": "Shoreditch", "url": "https://www.visitlondon.com/things-to-do/area-guide/east-london/shoreditch" },
+        { "title": "Notting Hill", "url": "https://www.visitlondon.com/things-to-do/area-guide/west-london/notting-hill" },
+        { "title": "Covent Garden", "url": "https://www.coventgarden.london" }
+      ]
+    }
+  ]
+}

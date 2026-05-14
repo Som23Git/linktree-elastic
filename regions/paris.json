@@ -1,0 +1,34 @@
+{
+  "region": "Paris",
+  "profile": {
+    "name": "Paris",
+    "description": "Art, architecture, and the world's finest museums. The French capital never disappoints."
+  },
+  "sections": [
+    {
+      "title": "Iconic Landmarks",
+      "links": [
+        { "title": "Eiffel Tower", "url": "https://www.toureiffel.paris/en" },
+        { "title": "Notre-Dame Cathedral", "url": "https://www.notredamedeparis.fr/en/" },
+        { "title": "Arc de Triomphe", "url": "https://www.paris-arc-de-triomphe.fr/en/" },
+        { "title": "Palace of Versailles", "url": "https://en.chateauversailles.fr" }
+      ]
+    },
+    {
+      "title": "Museums & Art",
+      "links": [
+        { "title": "The Louvre", "url": "https://www.louvre.fr/en" },
+        { "title": "Musee d'Orsay", "url": "https://www.musee-orsay.fr/en" },
+        { "title": "Centre Pompidou", "url": "https://www.centrepompidou.fr/en/" }
+      ]
+    },
+    {
+      "title": "Neighbourhoods",
+      "links": [
+        { "title": "Le Marais", "url": "https://en.parisinfo.com/paris-museum-monument/71392/Le-Marais" },
+        { "title": "Montmartre", "url": "https://en.parisinfo.com/paris-museum-monument/71394/Montmartre" },
+        { "title": "Saint-Germain-des-Pres", "url": "https://en.parisinfo.com/paris-museum-monument/71393/Saint-Germain-des-Pres" }
+      ]
+    }
+  ]
+}

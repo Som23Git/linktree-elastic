@@ -1,0 +1,34 @@
+{
+  "region": "New York",
+  "profile": {
+    "name": "New York City",
+    "description": "The city that never sleeps. Museums, skylines, neighbourhoods, and everything in between."
+  },
+  "sections": [
+    {
+      "title": "Iconic Landmarks",
+      "links": [
+        { "title": "Statue of Liberty", "url": "https://www.nps.gov/stli/index.htm" },
+        { "title": "Empire State Building", "url": "https://www.esbnyc.com" },
+        { "title": "Brooklyn Bridge", "url": "https://www.nycgo.com/attractions/brooklyn-bridge" },
+        { "title": "Central Park", "url": "https://www.centralparknyc.org" }
+      ]
+    },
+    {
+      "title": "Museums & Culture",
+      "links": [
+        { "title": "The Metropolitan Museum of Art", "url": "https://www.metmuseum.org" },
+        { "title": "MoMA", "url": "https://www.moma.org" },
+        { "title": "American Museum of Natural History", "url": "https://www.amnh.org" }
+      ]
+    },
+    {
+      "title": "Neighbourhoods",
+      "links": [
+        { "title": "Greenwich Village", "url": "https://www.nycgo.com/neighborhoods/greenwich-village" },
+        { "title": "DUMBO", "url": "https://www.nycgo.com/neighborhoods/dumbo" },
+        { "title": "Harlem", "url": "https://www.nycgo.com/neighborhoods/harlem" }
+      ]
+    }
+  ]
+}
