@@ -1,12 +1,12 @@
-# Personal Link Page
+# Linkfolio
 
-A minimal static link page you can deploy to Vercel in minutes. Comes with Elastic APM RUM wired in so you get real user monitoring -- page loads, web vitals, and link clicks -- flowing into your Elastic stack out of the box.
+A minimal static link page you can deploy to Vercel in minutes. Comes with Elastic APM RUM wired in so you get real user monitoring, page loads, web vitals, and link clicks flowing into your Elastic stack out of the box.
 
 ## What you get
 
 - A clean link page served as a static site (zero server cost on Vercel's free tier)
 - Link click tracking via a lightweight Vercel serverless function
-- Browser RUM via the Elastic APM RUM agent -- page load times, LCP, FID, CLS, and unhandled JS errors sent to your Elastic deployment
+- Browser RUM via the Elastic APM RUM agent, page load times, LCP, FID, CLS, and unhandled JS errors sent to your Elastic deployment
 
 ## Deploy to Vercel
 
@@ -16,7 +16,7 @@ Fork this repo, then go to [vercel.com](https://vercel.com), create a new projec
 
 ### 2. Get your APM details from Elastic
 
-If you already have Elastic Cloud with APM & Fleet Server running, your RUM details are ready to use -- no extra config needed.
+If you already have Elastic Cloud with APM & Fleet Server running, your RUM details are ready to use with no extra config needed.
 
 In Kibana go to **Observability -> User Experience**. At the top of the page you will find your APM Server URL and secret token. Copy both.
 
@@ -31,7 +31,7 @@ In your Vercel project go to **Settings -> Environment Variables** and add:
 | `ELASTIC_APM_SERVER_URL` | The APM server URL from the step above |
 | `ELASTIC_APM_SECRET_TOKEN` | The secret token from the step above |
 
-These are used at **build time** (esbuild bakes the APM URL into the browser bundle) and at **runtime** (the serverless function uses them to send link click spans).
+These are used at build time (esbuild bakes the APM URL into the browser bundle) and at runtime (the serverless function uses them to send link click spans).
 
 ### 4. Trigger a redeploy
 
@@ -45,14 +45,14 @@ Open Kibana and go to **Observability -> APM -> Services**. You will see your se
 
 Under that service you get:
 
-- **Transactions** -- one per page load, with full timing breakdown
-- **Web vitals** -- LCP, FID, CLS, FCP, TTFB scored against Core Web Vitals thresholds
-- **Errors** -- unhandled JS exceptions with stack traces
-- **Dependencies** -- outbound fetch calls including the `/api/track` link click events
+- **Transactions**: one per page load, with full timing breakdown
+- **Web vitals**: LCP, FID, CLS, FCP, TTFB scored against Core Web Vitals thresholds
+- **Errors**: unhandled JS exceptions with stack traces
+- **Dependencies**: outbound fetch calls including the `/api/track` link click events
 
 ## Customising your links
 
-Edit `regions/som.json`. Each link is one line:
+Edit the relevant file under `regions/`. Each link is one line:
 
 ```json
 { "title": "Button label", "url": "https://example.com" }
@@ -91,7 +91,7 @@ node build.js
 ## Project structure
 
 ```
-regions/som.json      <- Your links. Edit this.
+regions/              <- Your link files. Add or edit these.
 assets/js/rum.src.js  <- Browser RUM source (bundled by esbuild at build time)
 api/track.js          <- Vercel serverless function for link click tracking
 build.js              <- Builds static HTML into public/
