@@ -8,12 +8,10 @@
   <meta property="og:description" content="{{description}}" />
   <title>{{name}}</title>
   <link rel="stylesheet" href="/assets/css/style.css" />
-  <link rel="icon" href="https://www.elastic.co/favicon.ico" />
 </head>
 <body data-region="{{region_slug}}">
   <div class="container">
     <header>
-      <img src="/assets/images/elastic-logo.svg" alt="Elastic" class="logo" />
       <h1>{{name}}</h1>
       <p class="description">{{description}}</p>
     </header>
@@ -23,19 +21,10 @@
     </main>
 
     <footer>
-      <p>
-        <a href="https://www.elastic.co/community/codeofconduct" target="_blank" rel="noopener">Code of Conduct</a>
-        &bull;
-        <a href="https://www.elastic.co/legal/privacy-statement" target="_blank" rel="noopener">Privacy</a>
-        &bull;
-        <a href="https://www.elastic.co/legal/terms-of-use" target="_blank" rel="noopener">Terms</a>
-      </p>
+      <p>someshwaran.me</p>
     </footer>
   </div>
-  <!-- OTel RUM: document-load, web-vitals, exceptions → Elastic serverless -->
   <script src="/assets/js/rum.js"></script>
-
-  <!-- Link click tracking → /api/track (API key stays server-side) -->
   <script>
     const region = document.body.dataset.region || 'index';
     function track(payload) {
