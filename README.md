@@ -14,33 +14,28 @@ A minimal static link page you can deploy to Vercel in minutes. Comes with Elast
 
 Fork this repo, then go to [vercel.com](https://vercel.com), create a new project, and import your fork. Vercel will auto-detect the build settings from `vercel.json`.
 
-### 2. Set environment variables
+### 2. Get your APM details from Elastic
+
+If you already have Elastic Cloud with APM & Fleet Server running, your RUM details are ready to use -- no extra config needed.
+
+In Kibana go to **Observability -> User Experience**. At the top of the page you will find your APM Server URL and secret token. Copy both.
+
+Alternatively you can find the same values under **Observability -> APM -> Add data -> RUM (JS)**.
+
+### 3. Set environment variables
 
 In your Vercel project go to **Settings -> Environment Variables** and add:
 
-| Variable | Where to find it |
+| Variable | Value |
 |---|---|
-| `ELASTIC_APM_SERVER_URL` | Elastic Cloud -> your deployment -> APM server URL |
-| `ELASTIC_APM_SECRET_TOKEN` | Elastic Cloud -> your deployment -> APM secret token |
+| `ELASTIC_APM_SERVER_URL` | The APM server URL from the step above |
+| `ELASTIC_APM_SECRET_TOKEN` | The secret token from the step above |
 
 These are used at **build time** (esbuild bakes the APM URL into the browser bundle) and at **runtime** (the serverless function uses them to send link click spans).
 
-### 3. Enable RUM on your APM server
-
-The browser RUM agent sends requests directly from the user's browser to your APM server. You need to enable CORS for this to work.
-
-In your Elastic Cloud console go to your deployment -> **Edit** -> **APM & Fleet** -> user settings and add:
-
-```yaml
-apm-server.rum.enabled: true
-apm-server.rum.allow_origins: ["*"]
-```
-
-Save and wait for the deployment to restart (~2 minutes).
-
 ### 4. Trigger a redeploy
 
-Once the env vars are saved, go to **Vercel -> Deployments -> Redeploy** to trigger a fresh build that picks up the APM URL.
+Go to **Vercel -> Deployments -> Redeploy** to trigger a fresh build that picks up the env vars.
 
 Your link page is now live and sending RUM data to Elastic.
 
